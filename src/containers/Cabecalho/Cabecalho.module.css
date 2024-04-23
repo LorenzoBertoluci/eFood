@@ -1,0 +1,11 @@
+.cabecalho {
+  background-color: var(--cor-secundaria);
+  background-image: fundo;
+  color: var(--cor-principal);
+  text-align: center;
+  padding: 24px 0;
+
+}
+
+
+

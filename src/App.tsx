@@ -1,17 +1,32 @@
-import Header from './components/Cabecalho'
-import Hero from './components/Hero'
-import ListaVagas from './containers/ListaVagas'
+import Footer from './containers/Footer'
+
 import EstiloGlobal, { Container } from './styles'
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  createBrowserRouter
+} from 'react-router-dom'
+
+import Home from './pages/Home'
+import Restaurants from './pages/Restaurants'
+
+const Rotas = () => (
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/restaurantes/" element={<Restaurants />} />
+  </Routes>
+)
 
 function App() {
   return (
     <>
-      <EstiloGlobal />
-      <Header />
-      <Hero />
-      <Container>
-        <ListaVagas />
-      </Container>
+      <BrowserRouter>
+        <EstiloGlobal />
+        <Rotas />
+        <Footer />
+      </BrowserRouter>
     </>
   )
 }

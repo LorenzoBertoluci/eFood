@@ -1,0 +1,40 @@
+.Hero {
+  background-color: var(--cor-secundaria);
+  background-image: fundo;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cor-principal);
+  content: '';
+  opacity: 0.7;
+}
+
+.form div {
+  position: relative;
+  color: #eee;
+}
+
+.searchTitle {
+  font-family: Gloock, serif;
+  font-size: 48px;
+}
+
+@media (max-width: 768px) {
+  .form {
+    height: auto;
+    padding: 24px 0;
+  }
+
+  .searchTitle {
+    font-size: 32px;
+  }
+}
