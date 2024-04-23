@@ -7,6 +7,9 @@ const HeroDiv = styled.div`
   width: 100vw;
   background-position: center;
   background-image: url(${massa});
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 `
 export const Overlay = styled.div`
   width: 100%;

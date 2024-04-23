@@ -11,7 +11,8 @@ export const RestauranteLinha = styled.div`
 `
 
 export const RestauranteLi = styled.li`
-  max-width: 750px;
+  max-width: 550px;
+  min-width: 400px;
   border: 1px solid ${Cores.corPrincipal};
   background-color: #fff;
   color: ${Cores.corPrincipal};
@@ -81,6 +82,8 @@ export const RestauranteTag = styled(RestauranteLink)`
 `
 
 export const CardImg = styled.img`
+  background-size: cover;
+  height: 310px;
   width: 100%;
 `
 export const StarImg = styled.img`

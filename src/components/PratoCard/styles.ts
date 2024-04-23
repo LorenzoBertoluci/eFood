@@ -11,7 +11,8 @@ export const PratoLinha = styled.div`
 `
 
 export const PratoLi = styled.li`
-  max-width: 750px;
+  max-width: 450px;
+  min-width: 300px;
   border: 1px solid ${Cores.corPrincipal};
   background-color: ${Cores.corPrincipal};
   color: ${Cores.corSecundaria};
@@ -110,5 +111,7 @@ export const PratoTag = styled.a`
 `
 
 export const CardImg = styled.img`
+  background-size: cover;
+  height: 200px;
   width: 100%;
 `
