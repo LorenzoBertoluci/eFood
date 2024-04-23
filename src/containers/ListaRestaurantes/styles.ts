@@ -7,7 +7,7 @@ const RestaurantesUL = styled.ul`
   row-gap: 16px;
   margin-top: 32px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     grid-template-columns: 1fr;
   }
 `
